@@ -1,0 +1,191 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RADIO SEDMICA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body class="text-center">
+
+    <div class="d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto mt-4">
+          <h3 class="nav-title">RADIO SEDMICA</h3>
+          <p class="header_sub">Srećni kad usrećimo druge.</p>
+      </header>
+
+      <main role="main" class="flex-row">
+        <div class="flex-column">
+          <h1 class="cover-heading">Slušaj sedmicu!</h1>
+          <p class="lead">
+            <div id='rbcloud_mplayer13483'></div>
+          </p>
+          <p class="lead">
+            Trenutno slušamo: <div id='rbcloud_nowplaying8483'></div>
+          </p>
+          <script src='https://c24.radioboss.fm/w/nowplaying.js?u=234&amp;wid=8483&amp;nl=1'></script>
+        </div>
+        <div class="flex-column">
+          <main role="lista" class="inner">
+          <!-- RadioBOSS Cloud Recent Tracks Widget (Start) -->
+          <div id='rbcloud_recent18664' data-cnt='5'></div>
+          <script src='https://c24.radioboss.fm/w/recent.js?u=234&amp;wid=18664'></script>
+          <!-- RadioBOSS Cloud Recent Tracks Widget (End) -->
+        </main>
+        </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="row">
+          <a class="col-sm" href="https://www.facebook.com/radiosedmica" target="__blank">Facebook</a>
+          <a class="col-sm" href="mailto:info@radiosedmica.com">info@radiosedmica.com</a>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script
+    src='https://c24.radioboss.fm/w/mplayer.js?u=https%3A%2F%2Fc24.radioboss.fm%3A18234%2Fstream&amp;wid=13483&amp;pw=80&amp;ca=%23111111&amp;cg=%23b3b3b3'></script>
+    <script lang="js">
+      $(function() {
+        $('#rbcloud_recent18664 ul').addClass('table-info');
+        console.log('Uradio tebra');
+      });
+    </script>
+  </body>
+  <style>
+    /*
+ * Globals
+ */
+
+    /* Links */
+    a,
+    a:focus,
+    a:hover {
+      color: #fff;
+    }
+
+    .header_sub {
+      font-size: 22pt;
+      font-family: "Dancing Script", cursive;
+      font-weight: bold;
+    }
+
+    /* Custom default button */
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      color: #333;
+      text-shadow: none;
+      /* Prevent inheritance from `body` */
+      background-color: #fff;
+      border: .05rem solid #fff;
+    }
+
+
+    /*
+ * Base structure
+ */
+
+    html,
+    body {
+      height: 100%;
+      background: radial-gradient(circle, rgba(42, 67, 250, 1) 51%, rgba(9, 9, 121, 0.7441351540616247) 100%);
+    }
+
+    body {
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-pack: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    }
+
+    .cover-container {
+      max-width: 42em;
+    }
+
+
+    /*
+ * Header
+ */
+    .nav-title {
+      font-family: 'Rampart One', cursive;
+      font-size: 35pt;
+    }
+
+    .nav-masthead .nav-link {
+      padding: .25rem 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .5);
+      background-color: transparent;
+      border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link+.nav-link {
+      margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    @media (min-width: 48em) {
+      .masthead-brand {
+        float: left;
+      }
+
+      .nav-masthead {
+        float: right;
+      }
+    }
+
+
+    /*
+ * Cover
+ */
+    .cover {
+      padding: 0 1.5rem;
+    }
+
+    .cover .btn-lg {
+      padding: .75rem 1.25rem;
+      font-weight: 700;
+    }
+
+
+    /*
+ * Footer
+ */
+    .mastfoot {
+      color: rgba(255, 255, 255, .5);
+    }
+  </style>
+</html>
