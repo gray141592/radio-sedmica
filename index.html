@@ -332,7 +332,54 @@
       if (scrollpos >= header_height) { add_class_on_scroll(); }
       else { remove_class_on_scroll(); }
 
-    })
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const playButton = document.querySelector('#miniplayer_play');
+      const stopButton = document.querySelector('#miniplayer_stop');
+      if (playButton) {
+        playButton.addEventListener('click', function() {
+
+          // Check if the <a> currently has the "active" class
+          const wasActive = playButton.classList.contains('active');
+
+          // Send GA event with an additional parameter
+          gtag('event', 'radio_play', {
+            event_category: 'radio',
+            event_label: 'play_button',
+            value: 1,
+            is_active: wasActive ? 'true' : 'false'
+          });
+        });
+      } else {
+        gtag('event', 'radio_issue', {
+            event_category: 'issue',
+            event_label: 'play_button_not_found',
+            value: 1,
+          });
+      };
+      if (stopButton) {
+        stopButton.addEventListener('click', function() {
+
+          // Check if the <a> currently has the "active" class
+          const wasActive = stopButton.classList.contains('active');
+
+          // Send GA event with an additional parameter
+          gtag('event', 'radio_stop', {
+            event_category: 'radio',
+            event_label: 'stop_button',
+            value: 1,
+            is_active: wasActive ? 'true' : 'false'
+          });
+        });
+      } else {
+        gtag('event', 'radio_issue', {
+            event_category: 'issue',
+            event_label: 'stop_button_not_found',
+            value: 1,
+          });
+      };
+    });
   </script>
 
 </body>
