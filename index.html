@@ -61,6 +61,20 @@
       font-display: swap;
       src: local(''),
     }
+
+    .social-icon-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px;
+      margin-left: 4px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icon-link:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
   </style>
 
 </head>
@@ -78,7 +92,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
 
   <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-    <div class="container">
+    <div class="container" style="padding-right: 5px;">
       <a class="navbar-brand" href="/">
         <img src="img/Logo-za svetlu pozadinu 1.svg" alt="Logo" height="50">
       </a>
@@ -115,6 +129,16 @@
             </a>
           </li>
         </ul>
+        <div class="d-flex align-items-center ms-lg-auto mt-2 mt-lg-0">
+          <a href="https://www.facebook.com/RadioFeniks" target="_blank" rel="noopener noreferrer"
+            class="social-icon-link" aria-label="Facebook">
+            <img src="img/facebook-icon.svg" alt="Facebook" width="28" height="28">
+          </a>
+          <a href="https://www.instagram.com/feniksradio/" target="_blank" rel="noopener noreferrer"
+            class="social-icon-link" aria-label="Instagram">
+            <img src="img/instagram-icon.svg" alt="Instagram" width="28" height="28">
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -455,6 +479,30 @@
           <div class="card border-0 shadow-sm h-100 partner-card">
             <div class="card-body d-flex align-items-center justify-content-center p-4">
               <img src="img/sponsors/cocolino-logo-transparent.png" alt="Cocolino baby shop" class="img-fluid partner-logo">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Partner 11 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+        <a href="https://galenfarm.com/" target="_blank" rel="noopener noreferrer"
+          class="partner-link" data-partner-name="Galenfarm Gradiska">
+          <div class="card border-0 shadow-sm h-100 partner-card">
+            <div class="card-body d-flex align-items-center justify-content-center p-4">
+              <img src="img/sponsors/galenfarm.png" alt="Galenfarm Gradiska" class="img-fluid partner-logo">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Partner 12 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+        <a href="https://flexcredit.ba/" target="_blank" rel="noopener noreferrer"
+          class="partner-link" data-partner-name="Flex Credit">
+          <div class="card border-0 shadow-sm h-100 partner-card">
+            <div class="card-body d-flex align-items-center justify-content-center p-4">
+              <img src="img/sponsors/flexcredit-logo.png" alt="Flex Credit" class="img-fluid partner-logo">
             </div>
           </div>
         </a>
